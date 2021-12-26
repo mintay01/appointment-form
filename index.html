@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <form>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="row col-lg-3 mb-3 name dateDropdown">
+                <label for="formGroupExampleInput" class="form-label">Date Of Birth*:</label>
+    
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+        </form>
+       
+    </div> -->
+
+
+
+    <div class="container form-header">
+        <h1>Appointment Form</h1>
+    </div>
+    <div class="container">
+   
+        <form id="employeeList" name="user-form" class="form-content row">
+            <div class="form-name-details">
+                <div class=" name">
+                    <label for="fname">Full Name*</label>
+                    <input type="text" id="fname" name="fname" required />
+                </div>
+
+                <div class="name dateDropdown">
+                    <label for="dob">Date Of Birth*:</label>
+
+                </div>
+            </div>
+            <!-- <div class=" form-salary-designation-details">
+
+                <div class="name">
+                    <label for="designation">Designation*</label>
+                    <select id="designation" name="designation" required >
+                        <option style="display: none;" value=""></option>
+                        <option value="frontend-developer">Front-end Developer</option>
+                        
+                        <option value="backend-developer">Backend-Developer</option>
+                        <option value=".net-developer">.Net Developer</option>
+                        <option value="flutter-developer">Flutter-Developer</option>
+
+                    </select>
+                </div>
+                <div class="name">
+                    <label for="salary">*Salary</label>
+                    <input type="number" name="salary" id="salary" required>
+                </div>
+            </div> -->
+
+            <div class=" form-mail-details">
+                <div class="name">
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <!-- <div class="name">
+                    <label for="username">*User Name</label>
+                    <input type="text" name="username" id="username" required >
+                </div> -->
+            </div>
+            <div class="user form-add-phn-details">
+
+                <!-- <div class="name">
+                    <label for="address">*Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div> -->
+
+                <div class="name">
+                    <label for="phone">Phone*:</label>
+                    <div>
+                        <input type="tel" class="phone1" name="phone" placeholder="+977" disabled>
+                        <input type="tel" class="phone" name="phone" placeholder="Phone number" required>
+                    </div>
+
+                </div>
+            </div>
+            <div class="user form-dob-gender-details">
+
+                <div class="name gender">
+                    <span>Preferred Method Of Contact:</span>
+                    <div class="gender-content">
+                        <div>
+                            <input type="radio" name="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="phone" id="phone">
+                            <label for="phone">Phone</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="name form-dob-gender-details">
+                <label for="service">Service Requried:</label>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Services
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">Hair Style <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Temporery</a></li>
+                                <li><a tabindex="-1" href="#">Permanent</a></li>
+                                <!-- <li class="dropdown-submenu">
+                                <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">3rd level dropdown</a></li>
+                                  <li><a href="#">3rd level dropdown</a></li>
+                                </ul>
+                              </li> -->
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                <!-- <li class="dropdown-submenu">
+                                <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">3rd level dropdown</a></li>
+                                  <li><a href="#">3rd level dropdown</a></li>
+                                </ul>
+                              </li> -->
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                                <!-- <li class="dropdown-submenu">
+                            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">3rd level dropdown</a></li>
+                              <li><a href="#">3rd level dropdown</a></li>
+                            </ul>
+                          </li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-dob-gender-details">
+                <label for="time">Time*:</label>
+                <div class="time-from-to">
+                    <div>
+                        <label for="from">From:</label>
+                        <input type="time" name="from" id="from">
+                    </div>
+                    <div>
+                        <label for="from">To:</label>
+                        <input type="time" name="from" id="to">
+                    </div>
+                </div>
+                <div class="name dateDropdown">
+                    <label for="dob">Date*:</label>
+
+                </div>
+                <div class=" form-salary-designation-details">
+
+                    <div class="name">
+                        <label for="designation">Style Preferred*:</label>
+                        <select id="designation" name="designation" required>
+                            <option style="display: none;" value=""></option>
+                            <option value="frontend-developer">Style One</option>
+
+                            <option value="backend-developer">Style Two</option>
+                            <option value=".net-developer">Style Three</option>
+                            <option value="flutter-developer">Style Four</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="btn-div form-dob-gender-details">
+                <button class="button" type="submit"><span>Get Appointment </span></button>
+            </div>
+           
+        </form>
+    </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js file/datedropdown.js"></script>
+</body>
+
+</html>
